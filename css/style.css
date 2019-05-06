@@ -8023,6 +8023,11 @@ h1, h2, h3, h4, h5,
 .text-primary {
   color: #C033A4 !important; }
 
+.github-style {
+  font-size: 30px !important;
+}
+
+
 .ftco-navbar-light {
   position: absolute;
   top: 20px;
@@ -8059,7 +8064,7 @@ h1, h2, h3, h4, h5,
         position: relative; }
         .ftco-navbar-light .ftco-social li a span {
           position: absolute;
-          font-size: 20px;
+          font-size: 25px;
           top: 50%;
           left: 50%;
           -webkit-transform: translate(-50%, -50%);
@@ -8840,7 +8845,7 @@ textarea.form-control {
     position: relative; }
     .ftco-footer-social li a span {
       position: absolute;
-      font-size: 26px;
+      font-size: 30px;
       top: 50%;
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
