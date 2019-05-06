@@ -8499,13 +8499,13 @@ h1, h2, h3, h4, h5,
 
 .btn.btn-white {
   margin: 50px 0 0 0 !important;
-  background-color: #C033A4 !important;
-  border: 2px solid #C033A4 !important;
-  color: #fff !important; }
+  font-weight: 600;
+  font-size: 0.9em;
+   }
 
   .btn.btn-white:hover {
-    border: 2px solid #fff !important;
-    background: transparent !important;
+    border: 2px solid #C033A4 !important;
+    background: #C033A4 !important;
     color: #fff !important;
  }
 }
