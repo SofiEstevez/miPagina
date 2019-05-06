@@ -8083,7 +8083,7 @@ h1, h2, h3, h4, h5,
     color: #fff;
     font-weight: 400;
     opacity: 1 !important; }
-    .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
+   .navbar-nav > .nav-item > .nav-link:hover {
       color: #C033A4; }
     @media (max-width: 991.98px) {
       .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
@@ -8160,6 +8160,10 @@ h1, h2, h3, h4, h5,
     background: #fff !important;
     -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1); }
+
+    .ftco-navbar-light.scrolled .nav-link:hover {
+      color: #C033A4 !important; }  
+
     @media (max-width: 991.98px) {
       .ftco-navbar-light.scrolled .nav-item > .nav-link {
         padding-left: 0 !important;
@@ -8431,7 +8435,7 @@ h1, h2, h3, h4, h5,
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
-  border-radius: 3px;
+  border-radius: 5px;
   -webkit-box-shadow: none !important;
   box-shadow: none !important; }
   .btn:hover, .btn:active, .btn:focus {
@@ -8518,6 +8522,7 @@ h1, h2, h3, h4, h5,
       .ftco-about .one-half.img {
         height: 300px; } }
 
+
 .services {
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -8533,7 +8538,14 @@ h1, h2, h3, h4, h5,
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     border-radius: 50%; }
-    
+  
+@media (min-width: 1200px){
+  .services-m{
+    margin-top: 4rem;
+  }
+}
+
+
   .services h3 {
     font-size: 2em;
     margin-top: 0.5em;
@@ -8570,38 +8582,47 @@ h1, h2, h3, h4, h5,
     }    
 }
 
-
 .hablemos-content {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-content: center;
   box-sizing: border-box;
-
+  margin-bottom: 5rem;
 }
 
 .hablemos-font {
-  font-family: "Poppins", Arial, sans-serif;
+  font-family: 'Lato', Arial, sans-serif;
   font-size: 1.2em;
   color: white;
 }
 
 .mail-info {
-		font-family: Nunito, sans-serif;
+		font-family: 'Lato', sans-serif;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		cursor: pointer;
-		border-radius: 8px;
-		background: white;
+		border-radius: 5px;
+    background: transparent;
+    border: 2px solid white;
 		letter-spacing: 0.3px;
-		box-shadow: 0px 12px 17px rgba(0,0,0,0.26);
-		font-weight: 600;
+}
+
+.mail-info:hover {
+  border-radius: 5px;
+  background: black;
+  border: 2px solid black;
 }
 
 .mail-text {
-    font-size: 20px;
+    font-size: 1.4em;
     padding: 0.5em;
+    color: white;
+}
+
+.mail-text:hover {
+  color: #C033A4;
 }
 
 [tooltip]{
@@ -8630,7 +8651,7 @@ h1, h2, h3, h4, h5,
     transform: translateX(-50%) translateY(-100%);
     background: #fff;
     text-align: center;
-    color: #00afda;
+    color: #C033A4;
     padding: 0.5em;
     font-size: 0.7em;
     line-height: 1;
@@ -8889,7 +8910,7 @@ textarea.form-control {
    }
 
 .heading-section h2 {
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: 400;
   letter-spacing: 2px;
   position: relative; }
