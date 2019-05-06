@@ -1,9 +1,4 @@
-/*!
- * Bootstrap v4.2.1 (https://getbootstrap.com/)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -3456,6 +3451,8 @@ input[type="button"].btn-block {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 0.5rem 1rem; }
+
+
   .navbar > .container,
   .navbar > .container-fluid {
     display: -webkit-box;
@@ -8044,7 +8041,12 @@ h1, h2, h3, h4, h5,
     width: 100%; }
     @media (max-width: 767.98px) {
       .ftco-navbar-light .ftco-social {
-        opacity: 0; } }
+        display: none; }
+     
+      .navbar{
+        padding: 1rem 1rem 1rem 1rem;
+      }
+      }
     .ftco-navbar-light .ftco-social li {
       display: inline-block; }
       .ftco-navbar-light .ftco-social li a {
@@ -8586,15 +8588,16 @@ h1, h2, h3, h4, h5,
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   box-sizing: border-box;
   margin-bottom: 5rem;
 }
 
 .hablemos-font {
   font-family: 'Lato', Arial, sans-serif;
-  font-size: 1.2em;
+  font-size: 1.3em;
   color: white;
+  margin: 0rem 5rem 0 0;
 }
 
 .mail-info {
@@ -8603,27 +8606,25 @@ h1, h2, h3, h4, h5,
 		justify-content: center;
 		align-items: center;
 		cursor: pointer;
-		border-radius: 5px;
-    background: transparent;
-    border: 2px solid white;
 		letter-spacing: 0.3px;
-}
-
-.mail-info:hover {
-  border-radius: 5px;
-  background: black;
-  border: 2px solid black;
 }
 
 .mail-text {
     font-size: 1.4em;
     padding: 0.5em;
     color: white;
+    border-radius: 5px;
+    background: transparent;
+    border: 2px solid white;
 }
 
 .mail-text:hover {
   color: #C033A4;
+  border-radius: 5px;
+  background: black;
+  border: 2px solid black;
 }
+
 
 [tooltip]{
     position: relative;
@@ -8680,8 +8681,27 @@ h1, h2, h3, h4, h5,
 }
 
 @media (max-width: 810px) {
-.hablemos-content{
-display: block; } }
+  .hablemos-content{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  .hablemos-font{
+    margin: 0rem 0rem 2rem 0;
+  }  
+  }
+
+ @media (max-width: 808px){
+   .hablemos-content{
+     margin-bottom: 7rem;
+   }
+ } 
+
+ @media (max-width: px){
+  .mail-text{
+    font-size: 1.2rem;
+  }
+} 
 
 .sermon-wrap .text h2 a {
   color: #000000; }
